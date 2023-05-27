@@ -36,7 +36,8 @@ class data_overview():
     
     def descriptive_statistics(self):
         """
-        This function provides descriptive statistic of the different features."""
+        This function provides descriptive statistic of the different features.
+        """
         i = 5
         j = 0
         while True:
