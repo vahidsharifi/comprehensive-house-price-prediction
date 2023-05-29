@@ -229,5 +229,13 @@ class visualization():
 
             # showing the plot
             plt.show()
+        
+        
+        def Correlation_plotter(self):
+            plt.figure(figsize=(14, 8.6))
+            # define the mask to set the values in the upper triangle to True
+            mask = np.triu(np.ones_like(df.corr(), dtype=bool))
+            heatmap = sns.heatmap( df.corr(), mask=mask, vmin=-1, vmax=1, cmap='BrBG', annot_kws={'fontsize':8} )
+            heatmap.set_title('Correlation Heatmap', fontdict={'fontsize':18}, pad=16);
     
     
