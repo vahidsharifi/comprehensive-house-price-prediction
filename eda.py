@@ -211,6 +211,7 @@ class visualization:
         for i, feature in enumerate(self.categorical_features_list):
             ax = fig.add_subplot(4, 2, i + 1)
             sns.boxplot(x=feature, y="SalePrice", data=self.df, ax=ax)
+            plt.title(f"The Comparison between different groups of {feature} and SalePrice ")
         fig.tight_layout(pad=5)
         plt.show()
 
